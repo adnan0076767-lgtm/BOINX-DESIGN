@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BOINX DESIGN | Jasa Desain Grafis Profesional</title>
+
+  <meta name="description" content="BOINX DESIGN menyediakan jasa desain grafis profesional untuk logo, branding, poster, banner, konten media sosial, dan kebutuhan visual bisnis Anda.">
+  <meta name="keywords" content="BOINX DESIGN, jasa desain grafis, desain logo, branding, desain poster, desain banner">
+  <meta name="author" content="BOINX DESIGN">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080b14">
+
+  <!-- GANTI URL REPOSITORY DI BAWAH JIKA NAMA REPO BERBEDA -->
+  <link rel="canonical" href="https://USERNAME.github.io/BOINX-DESIGN/">
+
+  <!-- PREVIEW WHATSAPP, FACEBOOK, DAN MEDIA SOSIAL -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="BOINX DESIGN">
+  <meta property="og:title" content="BOINX DESIGN | Creative Graphic Studio">
+  <meta property="og:description" content="Ide kreatif, desain berkualitas. Wujudkan identitas visual bisnis Anda bersama BOINX DESIGN.">
+  <meta property="og:url" content="https://USERNAME.github.io/BOINX-DESIGN/">
+  <meta property="og:image" content="https://USERNAME.github.io/BOINX-DESIGN/boinx-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BOINX DESIGN Creative Graphic Studio">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BOINX DESIGN | Creative Graphic Studio">
+  <meta name="twitter:description" content="Jasa desain grafis profesional untuk bisnis dan personal.">
+  <meta name="twitter:image" content="https://USERNAME.github.io/BOINX-DESIGN/boinx-preview.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #080b14;
+      --panel: #101626;
+      --text: #f5f7ff;
+      --muted: #a4aec4;
+      --cyan: #57f2d2;
+      --blue: #6685ff;
+      --line: rgba(255,255,255,.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8,11,20,.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font: 700 23px 'Space Grotesk', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .brand span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    .nav-cta {
+      padding: 10px 17px;
+      border: 1px solid var(--cyan);
+      border-radius: 9px;
+      color: var(--cyan);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      padding: 90px 0;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      right: -100px;
+      top: 60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(102,133,255,.22), transparent 68%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 13px;
+      border: 1px solid rgba(87,242,210,.28);
+      border-radius: 30px;
+      color: var(--cyan);
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      letter-spacing: -2.5px;
+      margin-bottom: 22px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(100deg, var(--cyan), #7f9aff 70%, #bd8cff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 610px;
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: .25s;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: #07120f;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 640px;
+      margin-top: 55px;
+    }
+
+    .stat {
+      padding: 18px;
+      border-left: 2px solid var(--cyan);
+      background: rgba(255,255,255,.025);
+    }
+
+    .stat strong {
+      display: block;
+      font: 700 22px 'Space Grotesk', sans-serif;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 650px;
+      margin-bottom: 38px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 5vw, 46px);
+      margin-bottom: 13px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      background: linear-gradient(145deg, #121a2c, #0d1220);
+      border: 1px solid var(--line);
+      padding: 27px;
+      border-radius: 16px;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(87,242,210,.5);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: rgba(87,242,210,.1);
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .portfolio-card {
+      min-height: 220px;
+      border-radius: 15px;
+      border: 1px solid var(--line);
+      background: linear-gradient(140deg, #17243b, #111426 60%, #252044);
+      padding: 23px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--blue);
+    }
+
+    .portfolio-number {
+      font: 700 42px 'Space Grotesk', sans-serif;
+      color: rgba(255,255,255,.15);
+    }
+
+    .portfolio-card h3 {
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+
+    .portfolio-card p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .portfolio-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 18px;
+    }
+
+    .about-box {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 35px;
+      padding: 38px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: linear-gradient(130deg, #111a2b, #101020);
+    }
+
+    .about-box p {
+      color: var(--muted);
+      margin-top: 15px;
+    }
+
+    .about-points {
+      display: grid;
+      gap: 12px;
+      align-content: center;
+    }
+
+    .about-point {
+      padding: 14px;
+      background: rgba(255,255,255,.04);
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .about-point span {
+      color: var(--cyan);
+      margin-right: 8px;
+    }
+
+    .contact-box {
+      text-align: center;
+      padding: 55px 25px;
+      border-radius: 20px;
+      border: 1px solid rgba(87,242,210,.22);
+      background: radial-gradient(ellipse at top, rgba(87,242,210,.09), transparent 70%), #0e1422;
+    }
+
+    .contact-box h2 {
+      font-size: clamp(30px, 5vw, 44px);
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 25px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px 25px;
+      margin-top: 25px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .wa-float {
+      position: fixed;
+      z-index: 999;
+      right: 20px;
+      bottom: 20px;
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      box-shadow: 0 8px 30px rgba(37,211,102,.3);
+      transition: .2s;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.08);
+    }
+
+    .wa-float svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+
+    .reveal {
+      animation: appear .8s ease both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 800px) {
+      .nav-inner {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        gap: 17px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        white-space: nowrap;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 75px 0;
+      }
+
+      .services-grid,
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-box {
+        grid-template-columns: 1fr;
+        padding: 25px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .services-grid,
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        gap: 8px;
+      }
+
+      .stat {
+        padding: 12px 9px;
+      }
+
+      .stat strong {
+        font-size: 18px;
+      }
+
+      .stat span {
+        font-size: 10px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      h1 {
+        letter-spacing: -1.5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "BOINX DESIGN",
+    "description": "Jasa desain grafis profesional, logo, branding, poster, banner, dan konten media sosial.",
+    "email": "Irwanirawan461@gmail.com",
+    "telephone": "+62895405252029",
+    "areaServed": "Indonesia",
+    "serviceType": [
+      "Desain Logo",
+      "Branding",
+      "Desain Poster dan Banner",
+      "Desain Media Sosial"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">BOINX<span>.</span>DESIGN</a>
+
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#home">Home</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <a class="nav-cta" href="#kontak">Konsultasi ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content reveal">
+          <span class="eyebrow">CREATIVE GRAPHIC STUDIO</span>
+
+          <h1>
+            Desain Kreatif.<br>
+            Identitas <span class="gradient-text">Lebih Kuat.</span>
+          </h1>
+
+          <p>
+            Selamat datang di BOINX DESIGN. Kami membantu Anda menciptakan
+            visual yang menarik, profesional, dan berkarakter untuk bisnis,
+            brand, organisasi, maupun kebutuhan personal.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary"
+               href="https://wa.me/62895405252029?text=Halo%20BOINX%20DESIGN%2C%20saya%20ingin%20konsultasi%20desain."
+               target="_blank" rel="noopener noreferrer">
+              ✦ Pesan Desain
+            </a>
+
+            <a class="btn btn-secondary" href="#portfolio">
+              Lihat Portfolio ↗
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>Creative</strong>
+              <span>Ide penuh karakter</span>
+            </div>
+            <div class="stat">
+              <strong>Custom</strong>
+              <span>Desain sesuai kebutuhan</span>
+            </div>
+            <div class="stat">
+              <strong>Professional</strong>
+              <span>Tampilan berkualitas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">WHAT WE DO</span>
+          <h2>Layanan <span class="gradient-text">Desain</span></h2>
+          <p>
+            Solusi visual kreatif untuk membangun identitas dan meningkatkan
+            daya tarik brand Anda.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">✳</div>
+            <h3>Desain Logo</h3>
+            <p>Logo unik dan berkarakter untuk bisnis, komunitas, organisasi, dan brand personal.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◈</div>
+            <h3>Branding Identity</h3>
+            <p>Pengembangan identitas visual agar brand terlihat konsisten dan profesional.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">▧</div>
+            <h3>Poster & Banner</h3>
+            <p>Materi promosi untuk acara, usaha, produk, kampanye, dan kebutuhan publikasi.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◎</div>
+            <h3>Social Media Design</h3>
+            <p>Konten visual Instagram dan media sosial yang menarik serta sesuai karakter brand.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">▤</div>
+            <h3>Flyer & Brosur</h3>
+            <p>Desain informasi dan promosi yang rapi, jelas, dan mudah dipahami.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✧</div>
+            <h3>Custom Design</h3>
+            <p>Desain sesuai brief dan kebutuhan khusus Anda. Hubungi kami untuk berdiskusi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">SELECTED WORKS</span>
+          <h2>Creative <span class="gradient-text">Portfolio</span></h2>
+          <p>
+            Area showcase untuk memperlihatkan karya terbaik BOINX DESIGN.
+            Ganti contoh di bawah dengan karya desain asli milik Anda.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-number">01</div>
+            <div>
+              <h3>Logo & Brand Identity</h3>
+              <p>Visual identity untuk sebuah brand.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-number">02</div>
+            <div>
+              <h3>Product Campaign</h3>
+              <p>Konsep visual promosi produk.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-number">03</div>
+            <div>
+              <h3>Social Media Visual</h3>
+              <p>Konten digital untuk media sosial.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-number">04</div>
+            <div>
+              <h3>Poster Design</h3>
+              <p>Desain publikasi dan promosi.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-number">05</div>
+            <div>
+              <h3>Business Branding</h3>
+              <p>Identitas visual untuk usaha.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-number">06</div>
+            <div>
+              <h3>Creative Artwork</h3>
+              <p>Eksplorasi karya grafis kreatif.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="portfolio-note">
+          Catatan: enam kartu di atas merupakan contoh showcase, bukan klaim
+          proyek yang telah dikerjakan.
+        </p>
+      </div>
+    </section>
+
+    <section id="tentang">
+      <div class="container">
+        <div class="about-box">
+          <div>
+            <span class="eyebrow">ABOUT BOINX</span>
+            <h2>Visual yang punya <span class="gradient-text">makna.</span></h2>
+            <p>
+              BOINX DESIGN hadir untuk membantu mewujudkan ide menjadi karya
+              visual yang menarik dan tepat sasaran. Kami percaya desain
+              bukan hanya soal tampilan, tetapi juga cara menyampaikan pesan
+              dan membangun kesan.
+            </p>
+            <p>
+              Ceritakan konsep Anda, diskusikan kebutuhan desain, dan mari
+              kembangkan identitas visual yang sesuai dengan karakter Anda.
+            </p>
+          </div>
+
+          <div class="about-points">
+            <div class="about-point"><span>✦</span> Konsep desain menyesuaikan kebutuhan</div>
+            <div class="about-point"><span>✦</span> Fokus pada detail dan keterbacaan</div>
+            <div class="about-point"><span>✦</span> Komunikasi langsung melalui WhatsApp</div>
+            <div class="about-point"><span>✦</span> Diskusikan harga sebelum pengerjaan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <div class="container">
+        <div class="contact-box">
+          <span class="eyebrow">LET'S WORK TOGETHER</span>
+          <h2>Punya ide desain? <span class="gradient-text">Gaskeun!</span></h2>
+          <p>
+            Hubungi BOINX DESIGN untuk konsultasi kebutuhan desain grafis.
+            Sampaikan konsep, jenis desain, dan referensi yang Anda inginkan.
+          </p>
+
+          <div class="actions" style="justify-content:center">
+            <a class="btn btn-primary"
+               href="https://wa.me/62895405252029?text=Halo%20BOINX%20DESIGN%2C%20saya%20ingin%20memesan%20jasa%20desain."
+               target="_blank" rel="noopener noreferrer">
+              Chat WhatsApp ↗
+            </a>
+
+            <a class="btn btn-secondary"
+               href="mailto:Irwanirawan461@gmail.com?subject=Konsultasi%20Desain%20BOINX%20DESIGN">
+              Kirim Email ↗
+            </a>
+          </div>
+
+          <div class="contact-details">
+            <span>✉ Irwanirawan461@gmail.com</span>
+            <span>☎ 0895405252029</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> BOINX DESIGN. All rights reserved.</span>
+      <span>Designed with creativity ✦</span>
+    </div>
+  </footer>
+
+  <a class="wa-float"
+     href="https://wa.me/62895405252029?text=Halo%20BOINX%20DESIGN!"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Hubungi BOINX DESIGN melalui WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 .8A15.1 15.1 0 0 0 3.05 23.66L1 31l7.52-1.97A15.1 15.1 0 1 0 16 .8Zm0 27.4c-2.34 0-4.64-.63-6.65-1.83l-.48-.28-4.46 1.17 1.2-4.35-.31-.5A12.1 12.1 0 1 1 16 28.2Zm6.64-9.06c-.36-.18-2.12-1.05-2.45-1.17-.33-.12-.57-.18-.81.18-.24.36-.93 1.17-1.14 1.41-.21.24-.42.27-.78.09-.36-.18-1.51-.56-2.88-1.78-1.06-.94-1.78-2.1-1.99-2.46-.21-.36-.02-.56.16-.74.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.3-.7-.6-.6-.81-.61h-.69c-.24 0-.63.09-.96.45-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.54 3.88 6.16 5.44.86.37 1.53.59 2.05.75.86.27 1.64.23 2.26.14.69-.1 2.12-.87 2.42-1.71.3-.84.3-1.56.21-1.71-.09-.15-.33-.24-.69-.42Z"/>
+    </svg>
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
